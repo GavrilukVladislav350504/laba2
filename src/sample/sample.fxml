@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="390.0" style="-fx-background-radius: 250;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerInterface">
+  <tabs>
+    <Tab style="-fx-text-fill: #7ff000;" text="Phusical">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <children>
+                  <Label fx:id="resultFiz" alignment="CENTER" layoutY="368.0" prefHeight="68.0" prefWidth="390.0" style="-fx-text-fill: #7ff000;" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutY="309.0" mnemonicParsing="false" onAction="#calcFiz" prefHeight="59.0" prefWidth="390.0" style="-fx-text-fill: #7ff000; -fx-background-color: black;" text="START">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+                  <VBox layoutX="219.0" layoutY="66.0" spacing="5.0">
+                     <children>
+                        <CheckBox fx:id="checkOneFiz" layoutX="251.0" layoutY="54.0" mnemonicParsing="false" style="-fx-text-fill: #7ff000;" text="younger 3 years">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkTwoFiz" layoutX="251.0" layoutY="80.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="150.0" style="-fx-text-fill: #7ff000;" text="three to five years">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkThreeFiz" layoutX="251.0" layoutY="110.0" mnemonicParsing="false" style="-fx-text-fill: #7ff000;" text="older 5 years">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="valueFiz" layoutX="219.0" layoutY="170.0" />
+                  <TextField fx:id="costFiz" layoutX="220.0" layoutY="244.0" />
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="88.0" prefHeight="27.0" prefWidth="127.0" style="-fx-text-fill: #7ff000;" text="Age of the car">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="243.0" prefHeight="17.0" prefWidth="116.0" style="-fx-text-fill: #7ff000;" text="Cost (euro)">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="28.0" layoutY="169.0" prefHeight="27.0" prefWidth="152.0" style="-fx-text-fill: #7ff000;" text="Engine capacity">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Juridical">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="44.0" layoutY="210.0" prefHeight="27.0" prefWidth="135.0" style="-fx-text-fill: #7ff000;" text="Engine capacity">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="264.0" prefHeight="17.0" prefWidth="116.0" style="-fx-text-fill: #7ff000;" text="Cost (euro)">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="69.0" prefHeight="27.0" prefWidth="127.0" style="-fx-text-fill: #7ff000;" text="Age of the car">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="costJur" layoutX="216.0" layoutY="265.0" />
+                  <TextField fx:id="valueJur" layoutX="216.0" layoutY="211.0" />
+                  <VBox layoutX="226.0" layoutY="53.0" spacing="5.0">
+                     <children>
+                        <CheckBox fx:id="checkOneJur" layoutX="216.0" layoutY="59.0" mnemonicParsing="false" style="-fx-text-fill: #7ff000;" text="younger 3 years">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkTwoJur" layoutX="206.0" layoutY="86.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="150.0" style="-fx-text-fill: #7ff000;" text="three to five years">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkThreeJur" layoutX="226.0" layoutY="120.0" mnemonicParsing="false" style="-fx-text-fill: #7ff000;" text="older 5 years">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </VBox>
+                  <Button layoutY="309.0" mnemonicParsing="false" onAction="#calcJur" prefHeight="59.0" prefWidth="390.0" style="-fx-text-fill: #7ff000; -fx-background-color: black;" text="START">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="resultJur" alignment="CENTER" layoutY="368.0" prefHeight="68.0" prefWidth="390.0" style="-fx-text-fill: #7ff000;" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="149.0" prefHeight="27.0" prefWidth="152.0" style="-fx-text-fill: #7ff000;" text="Type of engine">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="226.0" layoutY="142.0" spacing="5.0">
+                     <children>
+                        <CheckBox fx:id="Benz" layoutX="245.0" layoutY="142.0" mnemonicParsing="false" text="benzine" textFill="#7ff000">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="Dt" layoutX="254.0" layoutY="169.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="110.0" text="diesel fuel" textFill="#7ff000">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
