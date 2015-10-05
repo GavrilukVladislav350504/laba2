@@ -29,17 +29,6 @@ public class Main extends Application {
         return true;
     }
 
-    public static boolean checkInt(String string) {
-        try {
-            if(Integer.parseInt(string)>0);
-        } catch (Exception e) {
-            System.out.print("Incorrect conditions\nclean or incorrect text field of cost or value");
-            return false;
-        }
-        return true;
-    }
-
-
     public static void main(String[] args) {
         launch(args);
     }
