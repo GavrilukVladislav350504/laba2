@@ -7,15 +7,18 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
-
+import javafx.scene.effect.Bloom;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.input.MouseEvent;
 
 
 public class controllerInterface {
-
+    @FXML
+    private Button startFiz;
     @FXML
     private Label resultFiz;
     @FXML
@@ -45,10 +48,6 @@ public class controllerInterface {
     private CheckBox Dt;
     @FXML
     private CheckBox Benz;
-
-
-
-
     @FXML
     private void calcFiz(ActionEvent event){
         if(checkOneFiz.isSelected()==true&&checkTwoFiz.isSelected()==true&&checkThreeFiz.isSelected()==false||

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 
 <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="390.0" style="-fx-background-radius: 250;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerInterface">
   <tabs>
@@ -16,7 +20,7 @@
                         <Font name="System Bold Italic" size="24.0" />
                      </font>
                   </Label>
-                  <Button layoutY="309.0" mnemonicParsing="false" onAction="#calcFiz" prefHeight="59.0" prefWidth="390.0" style="-fx-text-fill: #7ff000; -fx-background-color: black;" text="START">
+                  <Button layoutX="163.0" layoutY="309.0" mnemonicParsing="false" onAction="#calcFiz" prefHeight="59.0" prefWidth="110.0" style="-fx-text-fill: #7ff000; -fx-background-color: black;" text="START">
                      <font>
                         <Font name="System Bold Italic" size="24.0" />
                      </font>
@@ -57,6 +61,11 @@
                         <Font name="System Bold Italic" size="18.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="117.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resourses/images/Go.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
       </content>
     </Tab>
@@ -100,7 +109,7 @@
                         </CheckBox>
                      </children>
                   </VBox>
-                  <Button layoutY="309.0" mnemonicParsing="false" onAction="#calcJur" prefHeight="59.0" prefWidth="390.0" style="-fx-text-fill: #7ff000; -fx-background-color: black;" text="START">
+                  <Button layoutX="165.0" layoutY="309.0" mnemonicParsing="false" onAction="#calcJur" prefHeight="59.0" prefWidth="107.0" style="-fx-text-fill: #7ff000; -fx-background-color: black;" text="START">
                      <font>
                         <Font name="System Bold Italic" size="24.0" />
                      </font>
@@ -129,6 +138,11 @@
                         </CheckBox>
                      </children>
                   </VBox>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="118.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resourses/images/Go.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
       </content>
     </Tab>
